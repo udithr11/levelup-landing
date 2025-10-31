@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.ProC {
+  padding: 0 8rem;
+}
+@media (max-width: 1024px) {
+  .ProC {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 768px) {
+  .ProC {
+    padding: 0 2.75rem;
+  }
+}
+@media (max-width: 640px) {
+  .ProC {
+    padding: 0 1.75rem;
+  }
+}
+
+.ProC2 {
+  padding: 0 6rem;
+}
+@media (max-width: 1024px) {
+  .ProC2 {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .ProC2 {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .ProC2 {
+    padding: 0 1.5rem;
+  }
+}
+
+.linearGradient {
+  background: linear-gradient(180deg, #204b9a 0%, #042258 100%);
+}
+
+.boxShadow {
+  box-shadow: 0px 30px 45px 0px #7a92a814;
+}
+.boxShadowMob {
+  box-shadow: 11px 12px 10px 0px #7a92a814;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  width: fit-content;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 180s linear infinite;
+}
+@media (max-width: 768px) {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.ProC input:-webkit-autofill,
+.ProC input:-webkit-autofill:hover,
+.ProC input:-webkit-autofill:focus,
+.ProC input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2a529e inset !important;
+  -webkit-text-fill-color: white !important;
+  border: 1px solid #5673b1 !important;
+  color: white !important;
+  caret-color: white !important;
+}
+
+/* button animation */
+
+.button {
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover::after,
+.button:focus::after {
+  transform: translateX(0);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  background: #083bb2;
+  width: 110%;
+  height: 110%;
+  border-radius: 50px;
+  transform: translateX(-100%);
+  z-index: 0;
+  transition: 0.4s;
+}
+.button-white::after {
+  background: #355aa2;
+}
+.button-blue::after {
+  background: white;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Convert email inputs to lowercase */
+input[type="email"] {
+  text-transform: lowercase !important;
+}

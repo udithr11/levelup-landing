@@ -1,0 +1,39 @@
+{
+  "name": "static",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3004",
+    "build": "next build",
+    "start": "next start -p 3004",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "1.0.6",
+    "@material-tailwind/react": "^2.1.10",
+    "@next/font": "^14.2.15",
+    "@types/swiper": "^6.0.0",
+    "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "countries-states-cities": "^1.0.6",
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "solid": "link:@heroicons/react/16/solid",
+    "swiper": "^11.1.15"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20",
+    "@types/react": "^18.3.16",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5"
+  }
+}
