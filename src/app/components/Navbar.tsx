@@ -74,7 +74,7 @@ const Navbar = () => {
             <div
               className={`button button-white ${buttonText} ${buttonWrapper} bg-[#4164A7] `}
             >
-              <a href="https://partner.europeanuniversities.in">
+              <a href="https://partner.procubetech.com/">
                 <span>login</span>
               </a>
             </div>
